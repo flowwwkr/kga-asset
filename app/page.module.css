@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 360px;
+}
+.banner {
+  width: 100%;
+  height: 509px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+/*------------ Form Section --------------*/
+.formSection {
+  background: #1a2340;
+  width: 100%;
+  padding-top: 18px;
+}
+.section1Text {
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.formBox {
+  padding: 8.44px;
+}
+.form {
+  background: #fff;
+  padding: 11px 9px;
+}
+.formBox h4 {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 12.15px;
+  margin-bottom: 10.84px;
+}
+.formContents {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 8.5px;
+}
+.formRow {
+  display: flex;
+  align-items: center;
+}
+.formRow h5 {
+  width: 51px;
+  display: block;
+  display: flex;
+  align-items: center;
+  color: #222222;
+  font-size: 9px;
+  font-weight: 500;
+}
+.formContents input.design {
+  outline: none;
+  height: 24px;
+  border: 0.56px solid #aaaaaa;
+  border-radius: 2.81px;
+  padding: 0 4px;
+  font-size: 9px;
+  letter-spacing: -2%;
+}
+.formContents input::placeholder {
+  color: #757575;
+  font-size: 9px;
+  letter-spacing: -2%;
+}
+.input1 {
+  width: 274px;
+}
+.formRow .halfRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.halfRow > button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 133px;
+  height: 24px;
+  border: 0.56px solid #aaaaaa;
+  border-radius: 2.81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222222;
+  font-size: 9px;
+  font-weight: 700;
+  background: #fff;
+}
+.halfRow2 span {
+  font-size: 7px;
+  font-weight: 500;
+  letter-spacing: -2%;
+}
+.formRow .halfRow2 {
+  display: flex;
+  align-items: center;
+}
+.input2 {
+  width: 195px;
+}
+.checkArea {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 11.7px;
+}
+.checkArea label,
+.checkArea span {
+  font-size: 7px;
+  letter-spacing: -2%;
+}
+.checkArea span {
+  cursor: pointer;
+}
+.submitBtn {
+  width: 100%;
+  height: 28.41px;
+  border-radius: 16.88px;
+  background: #1a2340;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: -0.81px;
+}
+
+/*------------- Slider Section ----------------*/
+.sliderSection {
+  background: #eef1fa;
+  padding: 18px;
+}
