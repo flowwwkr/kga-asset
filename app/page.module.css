@@ -13,6 +13,21 @@
   width: 100%;
   height: 100%;
 }
+.floatBtn {
+  cursor: pointer;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  overflow: hidden;
+}
+.floatBtn > img {
+  width: 100%;
+  height: 100%;
+}
 /*------------ Form Section --------------*/
 .formSection {
   background: #1a2340;
@@ -20,8 +35,10 @@
   padding-top: 18px;
 }
 .section1Text {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  font-family: "EliceDXNeolliOTF";
   font-weight: 700;
+  line-height: 24px;
   color: #fff;
   text-align: center;
 }
@@ -33,8 +50,9 @@
   padding: 11px 9px;
 }
 .formBox h4 {
+  font-family: "NotoSansKR";
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 12.15px;
   margin-bottom: 10.84px;
 }
@@ -53,6 +71,7 @@
   display: block;
   display: flex;
   align-items: center;
+  font-family: "NotoSansKR";
   color: #222222;
   font-size: 9px;
   font-weight: 500;
@@ -67,6 +86,8 @@
   letter-spacing: -2%;
 }
 .formContents input::placeholder {
+  font-family: "SUIT";
+  font-weight: 500;
   color: #757575;
   font-size: 9px;
   letter-spacing: -2%;
@@ -90,13 +111,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "NotoSansKR";
   color: #222222;
   font-size: 9px;
   font-weight: 700;
   background: #fff;
 }
+.halfRow > button.on {
+  background: #1a2340;
+  color: #fff;
+}
 .halfRow2 span {
-  font-size: 7px;
+  font-family: "NotoSansKR";
+  font-size: 7.44px;
   font-weight: 500;
   letter-spacing: -2%;
 }
@@ -109,9 +136,18 @@
 }
 .checkArea {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 8px;
   margin-bottom: 11.7px;
+}
+.checkArea label {
+  cursor: pointer;
+  font-family: "SUIT";
+  color: #222222;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -2%;
 }
 .checkArea label,
 .checkArea span {
@@ -128,15 +164,107 @@
   background: #1a2340;
   color: #fff;
   font-size: 13.5px;
-  font-weight: 600;
+  font-family: "NotoSansKR";
+  font-weight: 500;
   border: none;
   outline: none;
   cursor: pointer;
   letter-spacing: -0.81px;
 }
+.formSection input[type="checkbox"] {
+  display: none;
+}
+.customChk {
+  width: 8px;
+  height: 8px;
+  background: url("./asset/check_false.png") no-repeat center center / contain;
+}
+.customChk.checked {
+  background: url("./asset/check_true.png") no-repeat center center / contain;
+}
 
 /*------------- Slider Section ----------------*/
 .sliderSection {
+  width: 100%;
   background: #eef1fa;
   padding: 18px;
+}
+.sliderSection > span {
+  display: inline-block;
+  width: 100%;
+  height: 31px;
+  font-family: "NotoSansKR";
+  font-size: 11.7px;
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: -2%;
+  text-align: center;
+}
+.sliderSection > span > em {
+  font-family: "NotoSansKR";
+  color: #3360fe;
+  font-style: normal;
+  letter-spacing: -2%;
+}
+.slideFrame {
+  position: relative;
+  width: 324px;
+  height: 153px;
+  overflow: hidden;
+}
+.slideWrap {
+  position: absolute;
+  display: flex;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  background: #ffffff;
+  transition: 0.4s;
+}
+.slide {
+  width: 324px;
+  height: 153px;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------- readMeSection ----------------*/
+.readMeSection {
+  padding: 8.44px;
+  background: #dfe3e6;
+}
+.readMeWrap {
+  background: #fff;
+  padding: 8px;
+}
+.readMeWrap > h3 {
+  padding-top: 10px;
+  padding-bottom: 16px;
+  text-align: center;
+  font-family: "NotoSansKR";
+  font-weight: 700;
+  color: #303136;
+  line-height: 17.38px;
+  letter-spacing: -2%;
+}
+.readMeWrap .line {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 1px;
+  background: #787b8a;
+}
+.readMeText ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.readMeText ul li {
+  font-family: "NotoSansKR";
+  font-weight: 400;
+  color: #636670;
+  font-size: 7px;
+  line-height: 10.14px;
+  letter-spacing: -2%;
 }

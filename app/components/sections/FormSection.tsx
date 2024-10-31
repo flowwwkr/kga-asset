@@ -1,6 +1,26 @@
+"use client";
+
 import styles from "@/app/page.module.css";
+import { useState, useRef } from "react";
 
 const FormSection = () => {
+  const [isChecked1, setIsChecked1] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
+  const [selectedGender, setSelectedGender] = useState<string | null>(null);
+  const refMale = useRef<HTMLButtonElement>(null);
+  const refFemale = useRef<HTMLButtonElement>(null);
+
+  const handleCheckboxChange1 = () => {
+    setIsChecked1((prev) => !prev);
+  };
+
+  const handleCheckboxChange2 = () => {
+    setIsChecked2((prev) => !prev);
+  };
+
+  const onClickBtn = (gender: string) => {
+    setSelectedGender(gender);
+  };
   return (
     <section className={styles.formSection}>
       <div className={styles.section1Text}>
@@ -24,8 +44,26 @@ const FormSection = () => {
             <div className={styles.formRow}>
               <h5>성&nbsp;별</h5>
               <div className={styles.halfRow}>
-                <button>남성</button>
-                <button>여성</button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onClickBtn("male");
+                  }}
+                  ref={refMale}
+                  className={selectedGender === "male" ? styles.on : ""}
+                >
+                  남성
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onClickBtn("female");
+                  }}
+                  ref={refFemale}
+                  className={selectedGender === "female" ? styles.on : ""}
+                >
+                  여성
+                </button>
               </div>
             </div>
             <div className={styles.formRow}>
@@ -50,17 +88,37 @@ const FormSection = () => {
           </div>
 
           <div className={styles.checkArea}>
-            <input type="checkbox" id="check1"/>
-            <label htmlFor="check1">개인정보 수집&middot;이용 동의 <span>[약관보기]</span></label>
-            <input type="checkbox" id="check2"/>
-            <label htmlFor="check2">제3자 제공 동의 <span>[약관보기]</span></label>
+            <label
+              htmlFor="check1"
+              className={`${styles.customChk} ${
+                isChecked1 ? styles.checked : ""
+              }`}
+            ></label>
+            <input
+              onChange={handleCheckboxChange1}
+              type="checkbox"
+              id="check1"
+            />
+            <label htmlFor="check1">
+              개인정보 수집&middot;이용 동의 <span>[약관보기]</span>
+            </label>
+
+            <label
+              htmlFor="check2"
+              className={`${styles.customChk} ${
+                isChecked2 ? styles.checked : ""
+              }`}
+            ></label>
+            <input
+              onChange={handleCheckboxChange2}
+              type="checkbox"
+              id="check2"
+            />
+            <label htmlFor="check2">
+              제3자 제공 동의 <span>[약관보기]</span>
+            </label>
           </div>
           <button className={styles.submitBtn}>상담 신청하기</button>
-
-          {/* 
-          체크박스 스타일입히기
-          폰트 적용시키기 
-          */}
         </form>
       </div>
     </section>
