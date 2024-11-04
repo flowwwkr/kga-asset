@@ -14,15 +14,15 @@ export default function Home() {
       <div className={styles.main}>
         <Header />
         <div className={styles.banner}>
-          <Image src={img_banner} alt="main-banner" />
+          <Image src={img_banner} alt="main-banner" fill />
         </div>
         <FormSection />
         <SliderSection />
         <ReadMeSection />
         <Footer />
-        <button className={styles.floatBtn}>
+        <a href="https://open.kakao.com/o/sV1mksUg" className={styles.floatBtn}>
           <Image src={kakaoIcon} alt="kakao" />
-        </button>
+        </a>
       </div>
     </div>
   );

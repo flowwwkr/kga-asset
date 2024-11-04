@@ -4,19 +4,26 @@ import styles from "@/app/page.module.css";
 import Image from "next/image";
 import s1 from "@/app/asset/s1.png";
 import s2 from "@/app/asset/s2.png";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 
 const SliderSection = () => {
   const [cnt, setCnt] = useState(1);
-  const position = ["0", "-324px", "-648px"];
+  const translateX = useMemo(
+    () => [
+      "translateX(0%)",
+      "translateX(calc(-1 * 100% / 3))",
+      "translateX(calc(-2 * 100% / 3))",
+    ],
+    []
+  );
   const slideRef = useRef<HTMLDivElement>(null);
 
-  const move = () => {
+  const move = useCallback(() => {
     setCnt((prevCnt) => (prevCnt === 2 ? 1 : prevCnt + 1));
     if (slideRef.current) {
-      slideRef.current.style.left = position[cnt];
+      slideRef.current.style.transform = translateX[cnt];
     }
-  };
+  }, [cnt, translateX]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,7 +32,7 @@ const SliderSection = () => {
         setTimeout(() => {
           if (slideRef.current) {
             slideRef.current.style.transition = "none";
-            slideRef.current.style.left = "0";
+            slideRef.current.style.transform = "translateX(0%)";
           }
         }, 500);
         setTimeout(() => {
@@ -38,7 +45,7 @@ const SliderSection = () => {
 
     // 클린업
     return () => clearInterval(interval);
-  }, [cnt]);
+  }, [cnt, move]);
 
   return (
     <section className={styles.sliderSection}>
