@@ -33,7 +33,7 @@
 }
 .section1Text {
   margin-bottom: 14px;
-  font-family: "EliceDXNeolliOTF";
+  font-family: var(--font-elice-dx-neolli);
   font-weight: 700;
   line-height: 24px;
   color: #fff;
@@ -47,7 +47,7 @@
   padding: 11px 9px;
 }
 .formBox h4 {
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-size: 11px;
   font-weight: 700;
   line-height: 12.15px;
@@ -68,7 +68,7 @@
   display: block;
   display: flex;
   align-items: center;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   color: #222222;
   font-size: 9px;
   font-weight: 500;
@@ -83,7 +83,7 @@
   letter-spacing: -2%;
 }
 .formContents input::placeholder {
-  font-family: "SUIT";
+  font-family: var(--font-suit);
   font-weight: 500;
   color: #757575;
   font-size: 9px;
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   color: #222222;
   font-size: 9px;
   font-weight: 700;
@@ -120,7 +120,7 @@
   color: #fff;
 }
 .halfRow2 span {
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-size: 7.44px;
   font-weight: 500;
   letter-spacing: -2%;
@@ -142,7 +142,7 @@
 }
 .checkArea label {
   cursor: pointer;
-  font-family: "SUIT";
+  font-family: var(--font-suit);
   color: #222222;
   font-weight: 400;
   line-height: 21px;
@@ -166,7 +166,7 @@
 .termBtn {
   all: unset;
   box-sizing: border-box;
-  font-family: "SUIT";
+  font-family: var(--font-suit);
   color: #222222;
   font-weight: 400;
   line-height: 21px;
@@ -182,7 +182,7 @@
   background: #1a2340;
   color: #fff;
   font-size: 13.5px;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-weight: 500;
   border: none;
   outline: none;
@@ -227,7 +227,7 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-size: 8px;
   font-weight: 400;
   color: #303136;
@@ -256,7 +256,7 @@
   display: inline-block;
   width: 100%;
   height: 31px;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-size: 11.7px;
   font-weight: 700;
   color: #333333;
@@ -264,7 +264,7 @@
   text-align: center;
 }
 .sliderSection > span > em {
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   color: #3360fe;
   font-style: normal;
   letter-spacing: -2%;
@@ -306,7 +306,7 @@
   padding-top: 10px;
   padding-bottom: 16px;
   text-align: center;
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-weight: 700;
   color: #303136;
   line-height: 17.38px;
@@ -324,7 +324,7 @@
   gap: 4px;
 }
 .readMeText ul li {
-  font-family: "NotoSansKR";
+  font-family: var(--font-noto-sans-kr);
   font-weight: 400;
   color: #636670;
   font-size: 7px;
