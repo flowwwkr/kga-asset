@@ -9,6 +9,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: auto 2781 / 3933;
+  cursor: default;
 }
 .floatBtn {
   cursor: pointer;

@@ -13,9 +13,11 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.main}>
         <Header />
-        <div className={styles.banner}>
-          <Image src={img_banner} alt="main-banner" fill />
-        </div>
+        <a href="tel:01086997275">
+          <div className={styles.banner}>
+            <Image src={img_banner} alt="main-banner" fill />
+          </div>
+        </a>
         <FormSection />
         <SliderSection />
         <ReadMeSection />
