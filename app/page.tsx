@@ -21,7 +21,7 @@ export default function Home() {
         <ReadMeSection />
         <Footer />
         <a href="https://open.kakao.com/o/sV1mksUg" className={styles.floatBtn}>
-          <Image src={kakaoIcon} alt="kakao" />
+          <Image src={kakaoIcon} alt="kakao" unoptimized />
         </a>
       </div>
     </div>
