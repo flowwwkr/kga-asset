@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { geistMono, geistSans } from "./font";
+import {
+  EliceDXNeolliOTF,
+  geistMono,
+  geistSans,
+  GeistVF,
+  NotoSansKr,
+  suit,
+} from "./font";
 
 export const metadata: Metadata = {
   title: "KGA Asset",
@@ -17,7 +24,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${NotoSansKr.variable} ${EliceDXNeolliOTF.variable} ${suit.variable} ${GeistVF.variable}`}
+      >
         {children}
       </body>
     </html>
