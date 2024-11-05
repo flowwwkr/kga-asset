@@ -40,7 +40,7 @@ export async function requestConsultation(
       // from: "eopinsight@naver.com", // 발신자 이메일 주소.
       from: "hjy7275@naver.com",
       // to: "info@eopinsight.com", //사용자가 입력한 이메일 -> 목적지 주소 이메일
-      to: "qhtm2580@naver.com",
+      to: "hjy7275@naver.com",
       subject: "[KGA-Asset] 상담 신청하기",
       html: `
     <div
