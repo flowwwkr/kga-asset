@@ -1,7 +1,7 @@
 import styles from "./components.module.css";
 import Image from "next/image";
 import logo from "@/app/asset/logo_hd.png";
-import ico_phone from "@/app/asset/phone.png";
+import ico_phone from "@/app/asset/phone.jpg";
 
 const Header = () => {
   return (
